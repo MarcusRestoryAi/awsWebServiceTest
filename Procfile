@@ -1,1 +1,0 @@
-web: java -Xms256m -jar awsWebServiceTest-0.0.1-SNAPSHOT.jar

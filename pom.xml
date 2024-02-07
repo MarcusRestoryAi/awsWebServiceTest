@@ -35,6 +35,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>webservice-app</finalName>
 	</build>
 
 </project>
