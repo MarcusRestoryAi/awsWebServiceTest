@@ -1,21 +1,27 @@
 package com.marcus.awsWebServiceTest.models;
 
-import jakarta.annotation.Generated;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.MongoId;
+
+
+//@Document
+@Entity
 
 @Data
-@Document
 @NoArgsConstructor
 @AllArgsConstructor
 public class Book {
 
-    @MongoId
-    private String id;
+    //@MongoId
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //private String id;
+    private Long id;
     private String title;
 
     private String author;
